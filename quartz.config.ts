@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Min Datamatiker Portefølje",
+    pageTitleSuffix: " - 4. Semester",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "da-DK",
+    baseUrl: "uyscutty.github.io/Datamatikerportef-lje",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -92,6 +92,11 @@ const config: QuartzConfig = {
       Plugin.CustomOgImages(),
     ],
   },
+  deploy: {
+    provider: "github",
+    repository: "uyScutty/Datamatikerportef-lje",
+    branch: "main"
+  }
 }
 
 export default config
