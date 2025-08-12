@@ -43,6 +43,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-          projectName: quartz
-          deploymentName: Branch Preview
-          directory: ${{ steps.preview-build-artifact.outputs.download-path }}
